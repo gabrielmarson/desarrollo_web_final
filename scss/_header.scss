@@ -4,7 +4,7 @@ nav{
         justify-content: space-evenly;   
         list-style: none;
         margin: 10px;
-        padding: 0.5rem;
+        padding: 10px;
         @media screen and (max-width: 480px){
             display: flex;
             flex-direction: column;
@@ -12,8 +12,8 @@ nav{
         }
         li{
             position: relative;
-            font-size: 1.3rem;
-            margin:auto;
+            margin: auto;
+            font-size: 1.4rem;
             list-style-type: none;
             &:hover{
                 transform: scale(1.2, 1.2);
@@ -23,10 +23,11 @@ nav{
                 text-decoration: none;
                 color: $color_a;
                 &:hover{
-                    color: blue;
+                    color: $h2color;
                 }
                 img{
                     width: 200px;
+                    margin-right: 30px;
                     animation-duration: 1s;
                     animation-name: aparecer;
                     animation-iteration-count: initial;
@@ -45,4 +46,9 @@ nav{
             }
         }
     }
+}
+
+h1{
+    text-align: center;
+    color: $h1color;
 }

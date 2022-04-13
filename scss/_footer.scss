@@ -3,6 +3,9 @@ footer{
         margin-top: 50px;
         margin-bottom: 30px;
         padding: 5px;
+        gap: 25px;
+        list-style: none;
+        list-style-type: none;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -20,14 +23,23 @@ footer{
         color: #eb738d;
     }
     .bi-facebook{
-        color: $h2color;
+        color: $h1color;
     }
     .bi-whatsapp{
         color: green;
     }
     .nav2{
-        background: rgb(75, 228, 156);
+        background: $h2color;
         margin: auto;
+        ul{
+            li{
+                a{
+                    &:hover{
+                        color: $h1color;
+                    }
+                }
+            }
+        }
     }
     h3{
         text-align: center;

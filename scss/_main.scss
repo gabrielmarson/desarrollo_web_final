@@ -3,11 +3,6 @@ main{
         color: $h2color;
         text-align: center;
     }
-    p{
-        text-align: justify;
-        margin: 10px auto;
-        padding: 5px;
-    }
     .productos{
         width: 95%;
         text-align: center;
@@ -15,16 +10,16 @@ main{
         padding: 10px;
         display: grid;
         gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: (1fr 1fr 1fr);
+        grid-template-rows: (1fr 1fr);
         grid-template-areas:
             "celusA celusB celusC"
             "celusD celusE celusF"
             "celusG celusH celusI" ;
             @media screen and (max-width: 480px){
-                grid-template-columns:repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
+            grid-template-columns: (1fr);
+            grid-template-rows:(1fr 1fr 1fr 1fr 1fr 1fr);
+            grid-template-areas: 
             "celusA"
             "celusB"
             "celusC"
@@ -35,5 +30,10 @@ main{
             "celusH"
             "celusI";
         }
+    }
+    p{
+        text-align: justify;
+        margin: 10px auto;
+        padding: 5px;
     }
 }

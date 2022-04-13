@@ -16,120 +16,141 @@
 </head>
 <body>
     <header>
+        <!--Barra de navegación-->
         <nav>
             <ul>
-                <li><a href="../index.html"><h1><img src="../assets/img2/logo_your-phone.svg" id="arriba" alt="imagen del logo"></h1></a></li>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html"><img src="../assets/img2/logo_your-phone.svg" id="arriba" alt="imagen del logo"></a></li>
                 <li><a href="../views/nosotros.html">Nosotros</a></li>
                 <li><a href="../views/smartphones.html">Smartphones</a></li>
                 <li><a href="../views/contacto.html">Contacto</a></li>
-                <nav class="navbar navbar-light">
-                    <div class="container-fluid">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-primary" type="submit">Buscar</button>
-                        </form>
-                    </div>
-                </nav>
                 <li><a href="../views/carrito.html"><i class="bi bi-cart"></i></a></li>
             </ul>
         </nav>
-    </header><hr>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Buscar</button>
+        </form>
+      </div><hr>
+      <h1>
+        El equipo ideal para tus necesidades encontralo acá!
+      </h1>
+  </header>
+  <!--Ofertas de equipos celulares / Utilice Grid para esta parte NO USE repeat para las fr porque cuando compilaba con sass me salian errores en el css. Igual me lo tomaba bien al codigo pero me marcaba en rojo. Al sacar los repeat se corrigió automáticamente-->
     <main>
         <h2>
             Smartphones
         </h2>
         <section class="productos">        
-            <div class="celusA allcel wow animate__animated animate__backInLeft">
-                <img src="../assets/img2/img_smartphones/s22_ultra_300.png" alt="imagen Samsung S21 Ultra"> <p>Pantalla: 6.8", 1440 x 3080 pixels. Procesador: Snapdragon 8 Gen 1 3GHz Exynos 2200 2.8GHz. RAM: 8GB/12GB. Almacenamiento: 128GB/256GB/512GB/1TB. Expansión: sin microSD. Cámara: Cuádruple, 108MP+10MP +10MP+12MP. Batería: 5000 mAh. OS: Android 12.</p>
+            <div class="celusA wow animate__animated animate__backInLeft">
+                <img src="../assets/img2/img_smartphones/s22_ultra_300.png" alt="imagen Samsung S21 Ultra">
+                <h2 class="card-title">Samsung S22 Ultra</h2>
+                <p>Pantalla: 6.8", 1440 x 3080 pixels. Procesador: Snapdragon 8 Gen 1 3GHz Exynos 2200 2.8GHz. RAM: 8GB/12GB. Almacenamiento: 128GB/256GB/512GB/1TB. Expansión: sin microSD. Cámara: Cuádruple, 108MP+10MP +10MP+12MP. Batería: 5000 mAh. OS: Android 12.</p>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="../views/carrito.html"><button class="btn btn-primary" type="button">Comprar</button></a>
                 </div>
             </div>
-            <div class="celusB allcel wow animate__animated animate__backInLeft">
+            <div class="celusB wow animate__animated animate__backInLeft">
                 <img src="../assets/img2/img_smartphones/s22_plus_300.png" alt="imagen Samsung S21 Plus">
+                <h2 class="card-title">Samsung S22 plus</h2>
                 <p>Pantalla: 6.6", 1080 x 2340 pixels. Procesador: Snapdragon 8 Gen 1 3GHz Exynos 2200 2.8GHz. RAM: 8GB. Almacenamiento: 128GB/256GB. Expansión: sin microSD. Cámara: Triple, 50MP+12MP+10MP. Batería: 4500 mAh. OS: Android 12. Perfil: 7.6 mm. Peso: 195 g</p>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="../views/carrito.html"><button class="btn btn-primary" type="button">Comprar</button></a>
                 </div>
             </div>
-            <div class="celusC allcel wow animate__animated animate__backInLeft">
-                <img src="../assets/img2/img_smartphones/s22_comun_300.png" alt="imagen Samsung S21 comun"> <p>Pantalla: 6.1", 1080 x 2340 pixels. Procesador: Snapdragon 8 Gen 1 3GHz Exynos 2200 2.8GHz. RAM: 8GB. Almacenamiento: 128GB/256GB. Expansión: sin microSD. Cámara: Triple, 50MP+12MP+10MP. Batería: 3700 mAh. OS: Android 12. Perfil: 7.6 mm. Peso: 167 g.</p>
+            <div class="celusC wow animate__animated animate__backInLeft">
+                <img src="../assets/img2/img_smartphones/s22_comun_300.png" alt="imagen Samsung S21 comun">
+                <h2 class="card-title">Samsung S22</h2>
+                <p>Pantalla: 6.1", 1080 x 2340 pixels. Procesador: Snapdragon 8 Gen 1 3GHz Exynos 2200 2.8GHz. RAM: 8GB. Almacenamiento: 128GB/256GB. Expansión: sin microSD. Cámara: Triple, 50MP+12MP+10MP. Batería: 3700 mAh. OS: Android 12. Perfil: 7.6 mm. Peso: 167 g.</p>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="../views/carrito.html"><button class="btn btn-primary" type="button">Comprar</button></a>
                 </div>
             </div>
-            <div class="celusD allcel wow animate__animated animate__backInLeft">
-                <img src="../assets/img2/img_smartphones/samsung_A51_300.png" alt="imagen Samsung A51"> <p>Pantalla: 6.5", 1080 x 2400 pixels. Procesador: Exynos 9611 2.3GHz. RAM: 4GB/6GB/8GB. Almacenamiento: 64GB/128GB. Expansión: microSD. Cámara: Cuádruple, 48MP+12MP +5MP+5MP. Batería: 4000 mAh. OS: Android 9.0. Perfil: 7.9 mm. Peso: 172 g</p>
+            <div class="celusD wow animate__animated animate__backInLeft">
+                <img src="../assets/img2/img_smartphones/samsung_A51_300.png" alt="imagen Samsung A51">
+                <h2 class="card-title">Samsung A51</h2>
+                <p>Pantalla: 6.5", 1080 x 2400 pixels. Procesador: Exynos 9611 2.3GHz. RAM: 4GB/6GB/8GB. Almacenamiento: 64GB/128GB. Expansión: microSD. Cámara: Cuádruple, 48MP+12MP +5MP+5MP. Batería: 4000 mAh. OS: Android 9.0. Perfil: 7.9 mm. Peso: 172 g</p>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="../views/carrito.html"><button class="btn btn-primary" type="button">Comprar</button></a>
                 </div>
             </div>
-            <div class="celusE allcel wow animate__animated animate__backInLeft">
-                <img src="../assets/img2/img_smartphones/samsung_A52_300.png" alt="imagen Samsung A52"> <p>Pantalla: 6.5", 1080 x 2400 pixels. Procesador: Snapdragon 720G 2.3GHz. RAM: 4GB/6GB/8GB. Almacenamiento: 128GB/256GB. Expansión: microSD. Cámara: Cuádruple, 64MP+12MP +5MP+5MP. Batería: 4500 mAh. OS: Android 11. Perfil: 8.4 mm. Peso: 189 g</p>
+            <div class="celusE wow animate__animated animate__backInLeft">
+                <img src="../assets/img2/img_smartphones/samsung_A52_300.png" alt="imagen Samsung A52">
+                <h2 class="card-title">Samsung A52</h2>
+                <p>Pantalla: 6.5", 1080 x 2400 pixels. Procesador: Snapdragon 720G 2.3GHz. RAM: 4GB/6GB/8GB. Almacenamiento: 128GB/256GB. Expansión: microSD. Cámara: Cuádruple, 64MP+12MP +5MP+5MP. Batería: 4500 mAh. OS: Android 11. Perfil: 8.4 mm. Peso: 189 g</p>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="../views/carrito.html"><button class="btn btn-primary" type="button">Comprar</button></a>
                 </div>
             </div>
-            <div class="celusF allcel wow animate__animated animate__backInLeft">
-                <img src="../assets/img2/img_smartphones/samsung_A21s_300.png" alt="imagen Samsung A21s"> <p>Pantalla: 6.5", 720 x 1600 pixels. Procesador: Exynos 850 2GHz. RAM: 3GB/4GB/6GB. Almacenamiento: 32GB/64GB. Expansión: microSD. Cámara: Cuádruple, 48MP+8MP +2MP+2MP. Batería: 5000 mAh. OS: Android 10. Perfil: 8.9 mm. Peso: 192 g</p>
+            <div class="celusF wow animate__animated animate__backInLeft">
+                <img src="../assets/img2/img_smartphones/samsung_A21s_300.png" alt="imagen Samsung A21s">
+                <h2 class="card-title">Samsung A21s</h2>
+                <p>Pantalla: 6.5", 720 x 1600 pixels. Procesador: Exynos 850 2GHz. RAM: 3GB/4GB/6GB. Almacenamiento: 32GB/64GB. Expansión: microSD. Cámara: Cuádruple, 48MP+8MP +2MP+2MP. Batería: 5000 mAh. OS: Android 10. Perfil: 8.9 mm. Peso: 192 g</p>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="../views/carrito.html"><button class="btn btn-primary" type="button">Comprar</button></a>
                 </div>
             </div>
-            <div class="celusG allcel wow animate__animated animate__backInLeft">
-                <img src="../assets/img2/img_smartphones/iphone13pro_300.png" alt="imagen Samsung A21s"> <p>Pantalla: 6.7", 1284 x 2778 pixels. Procesador: Apple A15 Bionic. Almacenamiento: 128GB/256GB/512GB/1TB. Expansión: sin microSD. Cámara: Cuádruple, 12MP+12MP +12MP+TOF 3D. OS: iOS 15. Variedad de colores dispobibles. Peso: 240 g</p>
+            <div class="celusG wow animate__animated animate__backInLeft">
+                <img src="../assets/img2/img_smartphones/iphone13pro_300.png" alt="imagen Samsung A21s">
+                <h2 class="card-title">Iphone 13 Pro</h2>
+                <p>Pantalla: 6.7", 1284 x 2778 pixels. Procesador: Apple A15 Bionic. Almacenamiento: 128GB/256GB/512GB/1TB. Expansión: sin microSD. Cámara: Cuádruple, 12MP+12MP +12MP+TOF 3D. OS: iOS 15. Variedad de colores dispobibles. Peso: 240 g</p>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="../views/carrito.html"><button class="btn btn-primary" type="button">Comprar</button></a>
                 </div>
             </div>
-            <div class="celusH allcel wow animate__animated animate__backInLeft">
-                <img src="../assets/img2/img_smartphones/moto_edge20_pro_300.png" alt="imagen Samsung A21s"> <p>Pantalla: 6.7", 1080 x 2400 pixels. Procesador: Snapdragon 870 3.2GHz. RAM: 12GB. Almacenamiento: 256GB. Expansión: sin microSD. Cámara: Triple, 108MP+8MP+16MP. Batería: 4500 mAh. OS: Android 11. Perfil: 8 mm. Peso: 185 g</p>
+            <div class="celusH wow animate__animated animate__backInLeft">
+                <img src="../assets/img2/img_smartphones/moto_edge20_pro_300.png" alt="imagen Samsung A21s">
+                <h2 class="card-title">Moto Edge 20 Pro</h2>
+                <p>Pantalla: 6.7", 1080 x 2400 pixels. Procesador: Snapdragon 870 3.2GHz. RAM: 12GB. Almacenamiento: 256GB. Expansión: sin microSD. Cámara: Triple, 108MP+8MP+16MP. Batería: 4500 mAh. OS: Android 11. Perfil: 8 mm. Peso: 185 g</p>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="../views/carrito.html"><button class="btn btn-primary" type="button">Comprar</button></a>
                 </div>
             </div>
-            <div class="celusI allcel wow animate__animated animate__backInLeft">
-                <img src="../assets/img2/img_smartphones/mi_11_ultra_300.png" alt="imagen Samsung A21s"> <p>Pantalla: 6.81", 1440 x 3200 pixels. Procesador: Snapdragon 888 2.84GHz. RAM: 8GB/12GB. Almacenamiento: 256GB/512GB. Expansión: sin microSD. Cámara: Triple, 50MP+48MP+48MP. Batería: 5000 mAh. OS: Android 11. Perfil: 8.4 mm. Peso: 234 g</p>
+            <div class="celusI wow animate__animated animate__backInLeft">
+                <img src="../assets/img2/img_smartphones/mi_11_ultra_300.png" alt="imagen Samsung A21s">
+                <h2 class="card-title">Mi 11 Ultra</h2>
+                <p>Pantalla: 6.81", 1440 x 3200 pixels. Procesador: Snapdragon 888 2.84GHz. RAM: 8GB/12GB. Almacenamiento: 256GB/512GB. Expansión: sin microSD. Cámara: Triple, 50MP+48MP+48MP. Batería: 5000 mAh. OS: Android 11. Perfil: 8.4 mm. Peso: 234 g</p>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="../views/carrito.html"><button class="btn btn-primary" type="button">Comprar</button></a>
                 </div>
             </div>
         </section>
-    </main><hr><br>
-    <footer>
+    </main>
+    <!--Formas de pago y redes sociales-->
+    <footer><hr>
         <div class="pago-envio">
-            <h3>
-              Medios de pago
-            </h3>
-            <img src="../assets/img2/logos-pago-online.png" alt="imagen de metodos de pago">
-            <h3>
-              Métodos de envío
-            </h3>
-            <img src="../assets/img2/mercado_envios.png" alt="imagen de metodos de envio">
-          </div>
-          <div>
-            <h3>
-              Seguinos en nuestras redes sociales
-            </h3>
-            <div class="redes">
-              <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class="bi bi-whatsapp"></i></a>
-            </div>
-          </div>
-          <nav class="nav2">
-              <ul>
-                  <li><a href="https://www.samsung.com/ar/" target="_blank">Ir a la pagina oficial Samsung</a></li>
-                  <li><a href="#arriba">Volver al inicio</a></li>
-              </ul>
-          </nav>
+          <h3>
+            Medios de pago
+          </h3>
+          <img src="../assets/img2/logos-pago-online.png" alt="imagen de metodos de pago">
+          <h3>
+            Métodos de envío
+          </h3>
+          <img src="../assets/img2/mercado_envios.png" alt="imagen de metodos de envio">
+        </div>
+        <div>
+          <h3>
+            Seguinos en nuestras redes sociales
+          </h3>
+          <ul class="redes">
+            <li><a href="https://www.instagram.com/?hl=es" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+          </ul>
+        </div>
+        <nav class="nav2">
+            <ul>
+                <li><a href="https://www.samsung.com/ar/" target="_blank">Ir a la página oficial Samsung</a></li>
+                <li><a href="#arriba">Volver al inicio</a></li>
+            </ul>
+        </nav>
     </footer>
-    <script src="../js/wow.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script>
     new WOW().init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
 </body>
 </html>
